@@ -1,0 +1,257 @@
+myHadoop: Setting MH_IPOIB_TRANSFORM='s/\([^.]*\).*$/\1.ibnet/' from myhadoop.conf
+myHadoop: Setting MH_SCRATCH_DIR=/scratch/$USER/$SLURM_JOBID from myhadoop.conf
+myHadoop: Using HADOOP_HOME=/opt/hadoop/2.6.0
+myHadoop: Using MH_SCRATCH_DIR=/scratch/sxa5726/28128441
+myHadoop: Using JAVA_HOME=/usr/java/latest
+myHadoop: Generating Hadoop configuration in directory in /home/sxa5726/cometcluster...
+myHadoop: Backing up old config dir to /home/sxa5726/cometcluster.1...
+`/home/sxa5726/cometcluster' -> `/home/sxa5726/cometcluster.1'
+myHadoop: Designating comet-12-54.ibnet as master node (namenode, secondary namenode, and jobtracker)
+myHadoop: The following nodes will be slaves (datanode, tasktracer):
+comet-12-54.ibnet
+comet-12-55.ibnet
+comet-12-56.ibnet
+19/11/12 20:53:20 INFO namenode.NameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting NameNode
+STARTUP_MSG:   host = comet-12-54.sdsc.edu/198.202.114.208
+STARTUP_MSG:   args = [-format]
+STARTUP_MSG:   version = 2.6.0
+STARTUP_MSG:   classpath = /home/sxa5726/cometcluster:/opt/hadoop/2.6.0/share/hadoop/common/lib/activation-1.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/hadoop-auth-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/servlet-api-2.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jersey-core-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jets3t-0.9.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/httpcore-4.2.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/zookeeper-3.4.6.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-collections-3.2.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-beanutils-core-1.8.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jetty-util-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-httpclient-3.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/apacheds-kerberos-codec-2.0.0-M15.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/mockito-all-1.8.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/hamcrest-core-1.3.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/api-asn1-api-1.0.0-M20.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/snappy-java-1.0.4.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/httpclient-4.2.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-codec-1.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/curator-recipes-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/java-xmlbuilder-0.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-compress-1.4.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/avro-1.7.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/guava-11.0.2.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jsr305-1.3.9.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-lang-2.6.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/api-util-1.0.0-M20.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/xz-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-digester-1.8.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/paranamer-2.3.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jetty-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/gson-2.2.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jaxb-api-2.2.2.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/curator-client-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-net-3.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/protobuf-java-2.5.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-logging-1.1.3.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jsp-api-2.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/log4j-1.2.17.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/curator-framework-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/stax-api-1.0-2.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-cli-1.2.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/netty-3.6.2.Final.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/junit-4.11.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-el-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-configuration-1.6.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/htrace-core-3.0.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jackson-xc-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/xmlenc-0.52.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/asm-3.2.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jasper-compiler-5.5.23.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/apacheds-i18n-2.0.0-M15.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-beanutils-1.7.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/hadoop-annotations-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jsch-0.1.42.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jasper-runtime-5.5.23.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jettison-1.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-math3-3.1.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jackson-jaxrs-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jaxb-impl-2.2.3-1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/slf4j-api-1.7.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-io-2.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jersey-server-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jersey-json-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/common/hadoop-common-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/hadoop-common-2.6.0-tests.jar:/opt/hadoop/2.6.0/share/hadoop/common/hadoop-nfs-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/servlet-api-2.5.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jersey-core-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jetty-util-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-codec-1.4.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/guava-11.0.2.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jsr305-1.3.9.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-lang-2.6.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jetty-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/protobuf-java-2.5.0.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-logging-1.1.3.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jsp-api-2.1.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/xml-apis-1.3.04.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/log4j-1.2.17.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-cli-1.2.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/netty-3.6.2.Final.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/xercesImpl-2.9.1.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-el-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/htrace-core-3.0.4.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/xmlenc-0.52.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/asm-3.2.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jasper-runtime-5.5.23.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-daemon-1.0.13.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-io-2.4.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jersey-server-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/hadoop-hdfs-2.6.0-tests.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/hadoop-hdfs-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/hadoop-hdfs-nfs-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/guice-servlet-3.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/activation-1.1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/javax.inject-1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/servlet-api-2.5.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-core-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/zookeeper-3.4.6.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-collections-3.2.1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jetty-util-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-httpclient-3.1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-guice-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-codec-1.4.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/aopalliance-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-compress-1.4.1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/guava-11.0.2.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jsr305-1.3.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-lang-2.6.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/leveldbjni-all-1.8.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/xz-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jetty-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jline-0.9.94.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jaxb-api-2.2.2.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/protobuf-java-2.5.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-logging-1.1.3.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/log4j-1.2.17.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/guice-3.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/stax-api-1.0-2.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-cli-1.2.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/netty-3.6.2.Final.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jackson-xc-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-client-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/asm-3.2.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jettison-1.1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jackson-jaxrs-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jaxb-impl-2.2.3-1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-io-2.4.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-server-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-json-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-resourcemanager-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-common-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-applications-unmanaged-am-launcher-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-applicationhistoryservice-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-registry-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-client-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-common-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-api-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-web-proxy-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-applications-distributedshell-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-tests-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-nodemanager-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/guice-servlet-3.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/javax.inject-1.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jersey-core-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/hamcrest-core-1.3.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jersey-guice-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/snappy-java-1.0.4.1.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/aopalliance-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/commons-compress-1.4.1.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/avro-1.7.4.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/leveldbjni-all-1.8.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/xz-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/paranamer-2.3.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/protobuf-java-2.5.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/log4j-1.2.17.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/guice-3.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/netty-3.6.2.Final.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/junit-4.11.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/asm-3.2.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/hadoop-annotations-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/commons-io-2.4.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jersey-server-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-app-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-shuffle-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.6.0-tests.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-core-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-plugins-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-common-2.6.0.jar:/opt/hadoop/2.6.0/contrib/capacity-scheduler/*.jar
+STARTUP_MSG:   build = https://git-wip-us.apache.org/repos/asf/hadoop.git -r e3496499ecb8d220fba99dc5ed4c99c8f9e33bb1; compiled by 'jenkins' on 2014-11-13T21:10Z
+STARTUP_MSG:   java = 1.8.0_60
+************************************************************/
+19/11/12 20:53:20 INFO namenode.NameNode: registered UNIX signal handlers for [TERM, HUP, INT]
+19/11/12 20:53:20 INFO namenode.NameNode: createNameNode [-format]
+19/11/12 20:53:21 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+19/11/12 20:53:21 WARN common.Util: Path /scratch/sxa5726/28128441/namenode_data should be specified as a URI in configuration files. Please update hdfs configuration.
+19/11/12 20:53:21 WARN common.Util: Path /scratch/sxa5726/28128441/namenode_data should be specified as a URI in configuration files. Please update hdfs configuration.
+Formatting using clusterid: CID-61435937-2c4f-4f93-9dd5-71a976903532
+19/11/12 20:53:21 INFO namenode.FSNamesystem: No KeyProvider found.
+19/11/12 20:53:21 INFO namenode.FSNamesystem: fsLock is fair:true
+19/11/12 20:53:21 INFO blockmanagement.DatanodeManager: dfs.block.invalidate.limit=1000
+19/11/12 20:53:21 INFO blockmanagement.DatanodeManager: dfs.namenode.datanode.registration.ip-hostname-check=true
+19/11/12 20:53:21 INFO blockmanagement.BlockManager: dfs.namenode.startup.delay.block.deletion.sec is set to 000:00:00:00.000
+19/11/12 20:53:21 INFO blockmanagement.BlockManager: The block deletion will start around 2019 Nov 12 20:53:21
+19/11/12 20:53:21 INFO util.GSet: Computing capacity for map BlocksMap
+19/11/12 20:53:21 INFO util.GSet: VM type       = 64-bit
+19/11/12 20:53:21 INFO util.GSet: 2.0% max memory 958.5 MB = 19.2 MB
+19/11/12 20:53:21 INFO util.GSet: capacity      = 2^21 = 2097152 entries
+19/11/12 20:53:21 INFO blockmanagement.BlockManager: dfs.block.access.token.enable=false
+19/11/12 20:53:21 INFO blockmanagement.BlockManager: defaultReplication         = 3
+19/11/12 20:53:21 INFO blockmanagement.BlockManager: maxReplication             = 512
+19/11/12 20:53:21 INFO blockmanagement.BlockManager: minReplication             = 1
+19/11/12 20:53:21 INFO blockmanagement.BlockManager: maxReplicationStreams      = 2
+19/11/12 20:53:21 INFO blockmanagement.BlockManager: shouldCheckForEnoughRacks  = false
+19/11/12 20:53:21 INFO blockmanagement.BlockManager: replicationRecheckInterval = 3000
+19/11/12 20:53:21 INFO blockmanagement.BlockManager: encryptDataTransfer        = false
+19/11/12 20:53:21 INFO blockmanagement.BlockManager: maxNumBlocksToLog          = 1000
+19/11/12 20:53:21 INFO namenode.FSNamesystem: fsOwner             = sxa5726 (auth:SIMPLE)
+19/11/12 20:53:21 INFO namenode.FSNamesystem: supergroup          = supergroup
+19/11/12 20:53:21 INFO namenode.FSNamesystem: isPermissionEnabled = true
+19/11/12 20:53:21 INFO namenode.FSNamesystem: HA Enabled: false
+19/11/12 20:53:21 INFO namenode.FSNamesystem: Append Enabled: true
+19/11/12 20:53:21 INFO util.GSet: Computing capacity for map INodeMap
+19/11/12 20:53:21 INFO util.GSet: VM type       = 64-bit
+19/11/12 20:53:21 INFO util.GSet: 1.0% max memory 958.5 MB = 9.6 MB
+19/11/12 20:53:21 INFO util.GSet: capacity      = 2^20 = 1048576 entries
+19/11/12 20:53:21 INFO namenode.NameNode: Caching file names occuring more than 10 times
+19/11/12 20:53:21 INFO util.GSet: Computing capacity for map cachedBlocks
+19/11/12 20:53:21 INFO util.GSet: VM type       = 64-bit
+19/11/12 20:53:21 INFO util.GSet: 0.25% max memory 958.5 MB = 2.4 MB
+19/11/12 20:53:21 INFO util.GSet: capacity      = 2^18 = 262144 entries
+19/11/12 20:53:21 INFO namenode.FSNamesystem: dfs.namenode.safemode.threshold-pct = 0.9990000128746033
+19/11/12 20:53:21 INFO namenode.FSNamesystem: dfs.namenode.safemode.min.datanodes = 0
+19/11/12 20:53:21 INFO namenode.FSNamesystem: dfs.namenode.safemode.extension     = 30000
+19/11/12 20:53:21 INFO namenode.FSNamesystem: Retry cache on namenode is enabled
+19/11/12 20:53:21 INFO namenode.FSNamesystem: Retry cache will use 0.03 of total heap and retry cache entry expiry time is 600000 millis
+19/11/12 20:53:21 INFO util.GSet: Computing capacity for map NameNodeRetryCache
+19/11/12 20:53:21 INFO util.GSet: VM type       = 64-bit
+19/11/12 20:53:21 INFO util.GSet: 0.029999999329447746% max memory 958.5 MB = 294.5 KB
+19/11/12 20:53:21 INFO util.GSet: capacity      = 2^15 = 32768 entries
+19/11/12 20:53:21 INFO namenode.NNConf: ACLs enabled? false
+19/11/12 20:53:21 INFO namenode.NNConf: XAttrs enabled? true
+19/11/12 20:53:21 INFO namenode.NNConf: Maximum size of an xattr: 16384
+19/11/12 20:53:21 INFO namenode.FSImage: Allocated new BlockPoolId: BP-747404718-198.202.114.208-1573620801395
+19/11/12 20:53:21 INFO common.Storage: Storage directory /scratch/sxa5726/28128441/namenode_data has been successfully formatted.
+19/11/12 20:53:21 INFO namenode.NNStorageRetentionManager: Going to retain 1 images with txid >= 0
+19/11/12 20:53:21 INFO util.ExitUtil: Exiting with status 0
+19/11/12 20:53:21 INFO namenode.NameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down NameNode at comet-12-54.sdsc.edu/198.202.114.208
+************************************************************/
+19/11/12 20:53:22 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Starting namenodes on [comet-12-54.ibnet]
+comet-12-54.ibnet: starting namenode, logging to /scratch/sxa5726/28128441/logs/hadoop-sxa5726-namenode-comet-12-54.sdsc.edu.out
+comet-12-54.ibnet: starting datanode, logging to /scratch/sxa5726/28128441/logs/hadoop-sxa5726-datanode-comet-12-54.sdsc.edu.out
+comet-12-55.ibnet: starting datanode, logging to /scratch/sxa5726/28128441/logs/hadoop-sxa5726-datanode-comet-12-55.sdsc.edu.out
+comet-12-56.ibnet: starting datanode, logging to /scratch/sxa5726/28128441/logs/hadoop-sxa5726-datanode-comet-12-56.sdsc.edu.out
+Starting secondary namenodes [comet-12-54.ibnet]
+comet-12-54.ibnet: starting secondarynamenode, logging to /scratch/sxa5726/28128441/logs/hadoop-sxa5726-secondarynamenode-comet-12-54.sdsc.edu.out
+19/11/12 20:53:37 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+starting yarn daemons
+starting resourcemanager, logging to /scratch/sxa5726/28128441/logs/yarn-sxa5726-resourcemanager-comet-12-54.out
+comet-12-54.ibnet: starting nodemanager, logging to /scratch/sxa5726/28128441/logs/yarn-sxa5726-nodemanager-comet-12-54.sdsc.edu.out
+comet-12-56.ibnet: starting nodemanager, logging to /scratch/sxa5726/28128441/logs/yarn-sxa5726-nodemanager-comet-12-56.sdsc.edu.out
+comet-12-55.ibnet: starting nodemanager, logging to /scratch/sxa5726/28128441/logs/yarn-sxa5726-nodemanager-comet-12-55.sdsc.edu.out
+19/11/12 20:53:40 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+19/11/12 20:53:41 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+19/11/12 20:53:42 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+19/11/12 20:53:43 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+which: no hbase in (/oasis/projects/nsf/uot143/fegaras/apache-hive-2.1.0-bin/bin:/opt/hadoop/2.6.0/sbin:/opt/hadoop/contrib/myHadoop/bin:/opt/hadoop/2.6.0/bin:/opt/gnu/gcc/bin:/opt/gnu/bin:/opt/mvapich2/intel/ib/bin:/opt/intel/composer_xe_2013_sp1.2.144/bin/intel64:/opt/intel/composer_xe_2013_sp1.2.144/mpirt/bin/intel64:/opt/intel/composer_xe_2013_sp1.2.144/debugger/gdb/intel64_mic/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/sdsc/bin:/opt/sdsc/sbin:/opt/ibutils/bin:/usr/java/latest/bin:/opt/pdsh/bin:/opt/rocks/bin:/opt/rocks/sbin:/home/sxa5726/bin)
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/oasis/projects/nsf/uot143/fegaras/apache-hive-2.1.0-bin/lib/log4j-slf4j-impl-2.4.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/hadoop/2.6.0/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/oasis/projects/nsf/uot143/fegaras/apache-hive-2.1.0-bin/lib/hive-common-2.1.0.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 2.167 seconds
+OK
+Time taken: 0.45 seconds
+FAILED: SemanticException Line 3:23 Invalid path ''/user/sxa5726/large-graph.txt'': No files matching path file:/user/sxa5726/large-graph.txt
+stopping yarn daemons
+stopping resourcemanager
+comet-12-54.ibnet: stopping nodemanager
+comet-12-55.ibnet: stopping nodemanager
+comet-12-56.ibnet: stopping nodemanager
+no proxyserver to stop
+19/11/12 20:54:07 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Stopping namenodes on [comet-12-54.ibnet]
+comet-12-54.ibnet: stopping namenode
+comet-12-55.ibnet: stopping datanode
+comet-12-54.ibnet: stopping datanode
+comet-12-56.ibnet: stopping datanode
+Stopping secondary namenodes [comet-12-54.ibnet]
+comet-12-54.ibnet: stopping secondarynamenode
+19/11/12 20:54:25 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Copying Hadoop logs back to /home/sxa5726/cometcluster/logs...
+`/scratch/sxa5726/28128441/logs' -> `/home/sxa5726/cometcluster/logs'
+`/scratch/sxa5726/28128441/logs/hadoop-sxa5726-secondarynamenode-comet-12-54.sdsc.edu.log' -> `/home/sxa5726/cometcluster/logs/hadoop-sxa5726-secondarynamenode-comet-12-54.sdsc.edu.log'
+`/scratch/sxa5726/28128441/logs/hadoop-sxa5726-datanode-comet-12-54.sdsc.edu.log' -> `/home/sxa5726/cometcluster/logs/hadoop-sxa5726-datanode-comet-12-54.sdsc.edu.log'
+`/scratch/sxa5726/28128441/logs/yarn-sxa5726-resourcemanager-comet-12-54.log' -> `/home/sxa5726/cometcluster/logs/yarn-sxa5726-resourcemanager-comet-12-54.log'
+`/scratch/sxa5726/28128441/logs/yarn-sxa5726-nodemanager-comet-12-54.sdsc.edu.log' -> `/home/sxa5726/cometcluster/logs/yarn-sxa5726-nodemanager-comet-12-54.sdsc.edu.log'
+`/scratch/sxa5726/28128441/logs/hadoop-sxa5726-namenode-comet-12-54.sdsc.edu.log' -> `/home/sxa5726/cometcluster/logs/hadoop-sxa5726-namenode-comet-12-54.sdsc.edu.log'
+`/scratch/sxa5726/28128441/logs/SecurityAuth-sxa5726.audit' -> `/home/sxa5726/cometcluster/logs/SecurityAuth-sxa5726.audit'
+`/scratch/sxa5726/28128441/logs/hadoop-sxa5726-namenode-comet-12-54.sdsc.edu.out' -> `/home/sxa5726/cometcluster/logs/hadoop-sxa5726-namenode-comet-12-54.sdsc.edu.out'
+`/scratch/sxa5726/28128441/logs/yarn-sxa5726-nodemanager-comet-12-54.sdsc.edu.out' -> `/home/sxa5726/cometcluster/logs/yarn-sxa5726-nodemanager-comet-12-54.sdsc.edu.out'
+`/scratch/sxa5726/28128441/logs/hadoop-sxa5726-secondarynamenode-comet-12-54.sdsc.edu.out' -> `/home/sxa5726/cometcluster/logs/hadoop-sxa5726-secondarynamenode-comet-12-54.sdsc.edu.out'
+`/scratch/sxa5726/28128441/logs/hadoop-sxa5726-datanode-comet-12-54.sdsc.edu.out' -> `/home/sxa5726/cometcluster/logs/hadoop-sxa5726-datanode-comet-12-54.sdsc.edu.out'
+`/scratch/sxa5726/28128441/logs/yarn-sxa5726-resourcemanager-comet-12-54.out' -> `/home/sxa5726/cometcluster/logs/yarn-sxa5726-resourcemanager-comet-12-54.out'
+`/scratch/sxa5726/28128441/logs/userlogs' -> `/home/sxa5726/cometcluster/logs/userlogs'
+removed directory: `/scratch/sxa5726/28128441/mapred_scratch/usercache'
+removed directory: `/scratch/sxa5726/28128441/mapred_scratch/nmPrivate'
+removed directory: `/scratch/sxa5726/28128441/mapred_scratch/filecache'
+removed directory: `/scratch/sxa5726/28128441/mapred_scratch'
+removed directory: `/scratch/sxa5726/28128441/tmp/dfs/namesecondary'
+removed directory: `/scratch/sxa5726/28128441/tmp/dfs'
+removed directory: `/scratch/sxa5726/28128441/tmp'
+removed `/scratch/sxa5726/28128441/namenode_data/current/edits_inprogress_0000000000000000001'
+removed `/scratch/sxa5726/28128441/namenode_data/current/fsimage_0000000000000000000.md5'
+removed `/scratch/sxa5726/28128441/namenode_data/current/fsimage_0000000000000000000'
+removed `/scratch/sxa5726/28128441/namenode_data/current/seen_txid'
+removed `/scratch/sxa5726/28128441/namenode_data/current/VERSION'
+removed directory: `/scratch/sxa5726/28128441/namenode_data/current'
+removed directory: `/scratch/sxa5726/28128441/namenode_data'
+removed `/scratch/sxa5726/28128441/hdfs_data/current/VERSION'
+removed directory: `/scratch/sxa5726/28128441/hdfs_data/current/BP-747404718-198.202.114.208-1573620801395/tmp'
+removed `/scratch/sxa5726/28128441/hdfs_data/current/BP-747404718-198.202.114.208-1573620801395/current/dfsUsed'
+removed directory: `/scratch/sxa5726/28128441/hdfs_data/current/BP-747404718-198.202.114.208-1573620801395/current/rbw'
+removed `/scratch/sxa5726/28128441/hdfs_data/current/BP-747404718-198.202.114.208-1573620801395/current/VERSION'
+removed `/scratch/sxa5726/28128441/hdfs_data/current/BP-747404718-198.202.114.208-1573620801395/current/finalized/subdir0/subdir0/blk_1073741825'
+removed `/scratch/sxa5726/28128441/hdfs_data/current/BP-747404718-198.202.114.208-1573620801395/current/finalized/subdir0/subdir0/blk_1073741826_1002.meta'
+removed `/scratch/sxa5726/28128441/hdfs_data/current/BP-747404718-198.202.114.208-1573620801395/current/finalized/subdir0/subdir0/blk_1073741826'
+removed `/scratch/sxa5726/28128441/hdfs_data/current/BP-747404718-198.202.114.208-1573620801395/current/finalized/subdir0/subdir0/blk_1073741825_1001.meta'
+removed directory: `/scratch/sxa5726/28128441/hdfs_data/current/BP-747404718-198.202.114.208-1573620801395/current/finalized/subdir0/subdir0'
+removed directory: `/scratch/sxa5726/28128441/hdfs_data/current/BP-747404718-198.202.114.208-1573620801395/current/finalized/subdir0'
+removed directory: `/scratch/sxa5726/28128441/hdfs_data/current/BP-747404718-198.202.114.208-1573620801395/current/finalized'
+removed directory: `/scratch/sxa5726/28128441/hdfs_data/current/BP-747404718-198.202.114.208-1573620801395/current'
+removed `/scratch/sxa5726/28128441/hdfs_data/current/BP-747404718-198.202.114.208-1573620801395/dncp_block_verification.log.curr'
+removed `/scratch/sxa5726/28128441/hdfs_data/current/BP-747404718-198.202.114.208-1573620801395/dncp_block_verification.log.prev'
+removed directory: `/scratch/sxa5726/28128441/hdfs_data/current/BP-747404718-198.202.114.208-1573620801395'
+removed directory: `/scratch/sxa5726/28128441/hdfs_data/current'
+removed directory: `/scratch/sxa5726/28128441/hdfs_data'
+removed directory: `/scratch/sxa5726/28128441/pids'
+removed `/scratch/sxa5726/28128441/logs/hadoop-sxa5726-secondarynamenode-comet-12-54.sdsc.edu.log'
+removed `/scratch/sxa5726/28128441/logs/hadoop-sxa5726-datanode-comet-12-54.sdsc.edu.log'
+removed `/scratch/sxa5726/28128441/logs/yarn-sxa5726-resourcemanager-comet-12-54.log'
+removed `/scratch/sxa5726/28128441/logs/yarn-sxa5726-nodemanager-comet-12-54.sdsc.edu.log'
+removed `/scratch/sxa5726/28128441/logs/hadoop-sxa5726-namenode-comet-12-54.sdsc.edu.log'
+removed `/scratch/sxa5726/28128441/logs/SecurityAuth-sxa5726.audit'
+removed `/scratch/sxa5726/28128441/logs/hadoop-sxa5726-namenode-comet-12-54.sdsc.edu.out'
+removed `/scratch/sxa5726/28128441/logs/yarn-sxa5726-nodemanager-comet-12-54.sdsc.edu.out'
+removed `/scratch/sxa5726/28128441/logs/hadoop-sxa5726-secondarynamenode-comet-12-54.sdsc.edu.out'
+removed `/scratch/sxa5726/28128441/logs/hadoop-sxa5726-datanode-comet-12-54.sdsc.edu.out'
+removed `/scratch/sxa5726/28128441/logs/yarn-sxa5726-resourcemanager-comet-12-54.out'
+removed directory: `/scratch/sxa5726/28128441/logs/userlogs'
+removed directory: `/scratch/sxa5726/28128441/logs'
+removed directory: `/scratch/sxa5726/28128441/mapred_scratch/filecache'
+removed directory: `/scratch/sxa5726/28128441/mapred_scratch/nmPrivate'
+removed directory: `/scratch/sxa5726/28128441/mapred_scratch/usercache'
+removed directory: `/scratch/sxa5726/28128441/mapred_scratch'
+removed `/scratch/sxa5726/28128441/hdfs_data/current/VERSION'
+removed `/scratch/sxa5726/28128441/hdfs_data/current/BP-747404718-198.202.114.208-1573620801395/dncp_block_verification.log.prev'
+removed `/scratch/sxa5726/28128441/hdfs_data/current/BP-747404718-198.202.114.208-1573620801395/current/VERSION'
+removed directory: `/scratch/sxa5726/28128441/hdfs_data/current/BP-747404718-198.202.114.208-1573620801395/current/rbw'
+removed `/scratch/sxa5726/28128441/hdfs_data/current/BP-747404718-198.202.114.208-1573620801395/current/dfsUsed'
+removed `/scratch/sxa5726/28128441/hdfs_data/current/BP-747404718-198.202.114.208-1573620801395/current/finalized/subdir0/subdir0/blk_1073741826_1002.meta'
+removed `/scratch/sxa5726/28128441/hdfs_data/current/BP-747404718-198.202.114.208-1573620801395/current/finalized/subdir0/subdir0/blk_1073741826'
+removed `/scratch/sxa5726/28128441/hdfs_data/current/BP-747404718-198.202.114.208-1573620801395/current/finalized/subdir0/subdir0/blk_1073741825_1001.meta'
+removed `/scratch/sxa5726/28128441/hdfs_data/current/BP-747404718-198.202.114.208-1573620801395/current/finalized/subdir0/subdir0/blk_1073741825'
+removed directory: `/scratch/sxa5726/28128441/hdfs_data/current/BP-747404718-198.202.114.208-1573620801395/current/finalized/subdir0/subdir0'
+removed directory: `/scratch/sxa5726/28128441/hdfs_data/current/BP-747404718-198.202.114.208-1573620801395/current/finalized/subdir0'
+removed directory: `/scratch/sxa5726/28128441/hdfs_data/current/BP-747404718-198.202.114.208-1573620801395/current/finalized'
+removed directory: `/scratch/sxa5726/28128441/hdfs_data/current/BP-747404718-198.202.114.208-1573620801395/current'
+removed directory: `/scratch/sxa5726/28128441/hdfs_data/current/BP-747404718-198.202.114.208-1573620801395/tmp'
+removed `/scratch/sxa5726/28128441/hdfs_data/current/BP-747404718-198.202.114.208-1573620801395/dncp_block_verification.log.curr'
+removed directory: `/scratch/sxa5726/28128441/hdfs_data/current/BP-747404718-198.202.114.208-1573620801395'
+removed directory: `/scratch/sxa5726/28128441/hdfs_data/current'
+removed directory: `/scratch/sxa5726/28128441/hdfs_data'
+removed directory: `/scratch/sxa5726/28128441/pids'
+removed directory: `/scratch/sxa5726/28128441/logs/userlogs'
+removed `/scratch/sxa5726/28128441/logs/hadoop-sxa5726-datanode-comet-12-55.sdsc.edu.out'
+removed `/scratch/sxa5726/28128441/logs/yarn-sxa5726-nodemanager-comet-12-55.sdsc.edu.out'
+removed `/scratch/sxa5726/28128441/logs/SecurityAuth-sxa5726.audit'
+removed `/scratch/sxa5726/28128441/logs/yarn-sxa5726-nodemanager-comet-12-55.sdsc.edu.log'
+removed `/scratch/sxa5726/28128441/logs/hadoop-sxa5726-datanode-comet-12-55.sdsc.edu.log'
+removed directory: `/scratch/sxa5726/28128441/logs'
+removed directory: `/scratch/sxa5726/28128441/mapred_scratch/nmPrivate'
+removed directory: `/scratch/sxa5726/28128441/mapred_scratch/usercache'
+removed directory: `/scratch/sxa5726/28128441/mapred_scratch/filecache'
+removed directory: `/scratch/sxa5726/28128441/mapred_scratch'
+removed `/scratch/sxa5726/28128441/hdfs_data/current/BP-747404718-198.202.114.208-1573620801395/dncp_block_verification.log.curr'
+removed directory: `/scratch/sxa5726/28128441/hdfs_data/current/BP-747404718-198.202.114.208-1573620801395/tmp'
+removed `/scratch/sxa5726/28128441/hdfs_data/current/BP-747404718-198.202.114.208-1573620801395/current/finalized/subdir0/subdir0/blk_1073741825'
+removed `/scratch/sxa5726/28128441/hdfs_data/current/BP-747404718-198.202.114.208-1573620801395/current/finalized/subdir0/subdir0/blk_1073741826'
+removed `/scratch/sxa5726/28128441/hdfs_data/current/BP-747404718-198.202.114.208-1573620801395/current/finalized/subdir0/subdir0/blk_1073741826_1002.meta'
+removed `/scratch/sxa5726/28128441/hdfs_data/current/BP-747404718-198.202.114.208-1573620801395/current/finalized/subdir0/subdir0/blk_1073741825_1001.meta'
+removed directory: `/scratch/sxa5726/28128441/hdfs_data/current/BP-747404718-198.202.114.208-1573620801395/current/finalized/subdir0/subdir0'
+removed directory: `/scratch/sxa5726/28128441/hdfs_data/current/BP-747404718-198.202.114.208-1573620801395/current/finalized/subdir0'
+removed directory: `/scratch/sxa5726/28128441/hdfs_data/current/BP-747404718-198.202.114.208-1573620801395/current/finalized'
+removed `/scratch/sxa5726/28128441/hdfs_data/current/BP-747404718-198.202.114.208-1573620801395/current/dfsUsed'
+removed `/scratch/sxa5726/28128441/hdfs_data/current/BP-747404718-198.202.114.208-1573620801395/current/VERSION'
+removed directory: `/scratch/sxa5726/28128441/hdfs_data/current/BP-747404718-198.202.114.208-1573620801395/current/rbw'
+removed directory: `/scratch/sxa5726/28128441/hdfs_data/current/BP-747404718-198.202.114.208-1573620801395/current'
+removed `/scratch/sxa5726/28128441/hdfs_data/current/BP-747404718-198.202.114.208-1573620801395/dncp_block_verification.log.prev'
+removed directory: `/scratch/sxa5726/28128441/hdfs_data/current/BP-747404718-198.202.114.208-1573620801395'
+removed `/scratch/sxa5726/28128441/hdfs_data/current/VERSION'
+removed directory: `/scratch/sxa5726/28128441/hdfs_data/current'
+removed directory: `/scratch/sxa5726/28128441/hdfs_data'
+removed directory: `/scratch/sxa5726/28128441/pids'
+removed `/scratch/sxa5726/28128441/logs/SecurityAuth-sxa5726.audit'
+removed `/scratch/sxa5726/28128441/logs/hadoop-sxa5726-datanode-comet-12-56.sdsc.edu.out'
+removed directory: `/scratch/sxa5726/28128441/logs/userlogs'
+removed `/scratch/sxa5726/28128441/logs/yarn-sxa5726-nodemanager-comet-12-56.sdsc.edu.log'
+removed `/scratch/sxa5726/28128441/logs/yarn-sxa5726-nodemanager-comet-12-56.sdsc.edu.out'
+removed `/scratch/sxa5726/28128441/logs/hadoop-sxa5726-datanode-comet-12-56.sdsc.edu.log'
+removed directory: `/scratch/sxa5726/28128441/logs'
+removed directory: `/tmp/Jetty_0_0_0_0_50070_hdfs____w2cu08/.active'
+removed directory: `/tmp/Jetty_0_0_0_0_50070_hdfs____w2cu08/jsp'
+removed directory: `/tmp/Jetty_0_0_0_0_50070_hdfs____w2cu08'
+removed directory: `/tmp/Jetty_comet.12.54_ibnet_50090_secondary____.qbfpzp/.active'
+removed directory: `/tmp/Jetty_comet.12.54_ibnet_50090_secondary____.qbfpzp/jsp'
+removed directory: `/tmp/Jetty_comet.12.54_ibnet_50090_secondary____.qbfpzp'
+removed directory: `/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_2870746640718761751/.active'
+removed directory: `/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_2870746640718761751/jsp'
+removed directory: `/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_2870746640718761751'
